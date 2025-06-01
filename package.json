@@ -1,0 +1,21 @@
+{
+  "name": "greet-users-test",
+  "version": "1.0.0",
+  "description": "A simple package that greets users.",
+  "main": "index.js",
+  "scripts": {
+  "build": "tsup src/index.ts --dts",
+  "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [
+    "greet",
+    "npm",
+    "example"
+  ],
+  "author": "João Ramos",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
