@@ -2,6 +2,12 @@ import type {
   FullConfig, FullResult, Reporter, Suite, TestCase, TestResult
 } from '@playwright/test/reporter';
 
+export function add(a:number, b:number):number{
+
+
+    return a + b;
+}
+
 class MyReporter implements Reporter {
   onBegin(config: FullConfig, suite: Suite) {
     console.log(`Starting the run with ${suite.allTests().length} tests`);
