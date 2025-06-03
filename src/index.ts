@@ -3,17 +3,16 @@ import type {
 } from '@playwright/test/reporter';
 
 export function add(a:number, b:number):number{
-
-
+    console.log(`Adding ${a} and ${b}`);
     return a + b;
 }
 
 class MyReporter implements Reporter {
-  onBegin(config: FullConfig, suite: Suite) {
+  onBegin(_: FullConfig, suite: Suite) {
     console.log(`Starting the run with ${suite.allTests().length} tests`);
   }
 
-  onTestBegin(test: TestCase, result: TestResult) {
+  onTestBegin(test: TestCase, _: TestResult) {
     console.log(`Starting test ${test.title}`);
   }
 
